@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 
-export default async function getWebsiteDetails(url) {
+async function getWebsiteDetails(url) {
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
   await page.setUserAgent(
@@ -86,3 +86,5 @@ export default async function getWebsiteDetails(url) {
   console.log(result);
   return result;
 }
+
+module.exports = getWebsiteDetails;

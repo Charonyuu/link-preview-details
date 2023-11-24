@@ -1,4 +1,4 @@
-import getWebsiteDetails from "./index";
+const getWebsiteDetails = require("./index");
 
 describe("getWebsiteDetails", () => {
   it("should return webpage details for a given URL", async () => {

@@ -1,6 +1,6 @@
 {
   "name": "link-preview-details",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Node.js module for generating link previews using Puppeteer.",
   "main": "index.js",
   "scripts": {
@@ -29,9 +29,6 @@
   },
   "homepage": "https://github.com/charonyuu/link-preview-details#readme",
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/preset-env": "^7.23.3",
-    "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
   }
 }
