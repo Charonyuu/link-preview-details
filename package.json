@@ -1,6 +1,6 @@
 {
   "name": "link-preview-details",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Node.js module for generating link previews using Puppeteer.",
   "main": "index.js",
   "scripts": {
