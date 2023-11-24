@@ -17,12 +17,12 @@ npm install link-preview-details
 ```javascript
 const getLinkPreview = require('link-preview-details');
 
-// 以默认模式运行
+// 以默認模式運行
 getLinkPreview('https://example.com').then(preview => {
     console.log(preview);
 });
 
-// 以无沙箱模式运行
+// 以無沙盒模式運行，大部分是在使用遠端電腦linux時，跳出fail to launch browser、或--no-sandbox錯誤時使用
 getLinkPreview('https://example.com', true).then(preview => {
     console.log(preview);
 });
