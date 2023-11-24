@@ -1,5 +1,5 @@
 {
-  "name": "node-link-preview",
+  "name": "link-preview-details",
   "version": "1.0.0",
   "description": "A Node.js module for generating link previews using Puppeteer.",
   "main": "index.js",
@@ -8,14 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/charonyuu/node-link-preview.git"
+    "url": "https://github.com/charonyuu/link-preview-details.git"
   },
   "keywords": [
     "link",
     "preview",
     "nodejs",
     "puppeteer",
-    "scraper"
+    "scraper",
+    "link-preview",
+    "link-details"
   ],
   "author": "charonyu",
   "license": "ISC",
@@ -23,9 +25,9 @@
     "puppeteer": "^21.5.2"
   },
   "bugs": {
-    "url": "https://github.com/charonyuu/node-link-preview/issues"
+    "url": "https://github.com/charonyuu/link-preview-details/issues"
   },
-  "homepage": "https://github.com/charonyuu/node-link-preview#readme",
+  "homepage": "https://github.com/charonyuu/link-preview-details#readme",
   "devDependencies": {
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",

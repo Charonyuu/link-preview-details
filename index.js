@@ -3,6 +3,10 @@ const puppeteer = require("puppeteer");
 export default async function getWebsiteDetails(url) {
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
+  await page.setUserAgent(
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36"
+  );
+
   await page.goto(url);
   // 使用 Puppeteer 的 evaluate 方法在頁面上下文中運行 JavaScript
   const result = await page.evaluate(() => {

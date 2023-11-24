@@ -1,21 +1,21 @@
-# node-link-preview
+# link-preview-details
 
-`node-link-preview` 是一個使用 Puppeteer 的 Node.js 模塊，用於生成網頁鏈接預覽，包括標題、描述和圖片。
+`link-preview-details` 是一個使用 Puppeteer 的 Node.js 模塊，用於生成網頁鏈接預覽，包括標題、描述和圖片。
 
 ## 安裝
 
-使用 npm 安裝 `node-link-preview`：
+使用 npm 安裝 `link-preview-details`：
 
 ```bash
-npm install node-link-preview
+npm install link-preview-details
 ```
 
 ## 使用方法
 
-導入 `node-link-preview`，並使用它來獲取網頁的預覽信息：
+導入 `link-preview-details`，並使用它來獲取網頁的預覽信息：
 
 ```javascript
-const getLinkPreview = require('node-link-preview');
+const getLinkPreview = require('link-preview-details');
 
 getLinkPreview('https://example.com').then(preview ={
     console.log(preview);
