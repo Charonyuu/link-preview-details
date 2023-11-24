@@ -83,7 +83,6 @@ async function getWebsiteDetails(url) {
   });
 
   await browser.close();
-  console.log(result);
   return result;
 }
 

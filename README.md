@@ -17,7 +17,7 @@ npm install link-preview-details
 ```javascript
 const getLinkPreview = require('link-preview-details');
 
-getLinkPreview('https://example.com').then(preview ={
+getLinkPreview('https://example.com').then(preview =>{
     console.log(preview);
 });
 ```
