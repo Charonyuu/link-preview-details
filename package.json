@@ -1,6 +1,6 @@
 {
   "name": "link-preview-details",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Node.js module for generating link previews using Puppeteer.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,10 @@
     "puppeteer",
     "scraper",
     "link-preview",
-    "link-details"
+    "link-details",
+    "no sandbox",
+    "for linux",
+    "fix fail to launch browser"
   ],
   "author": "charonyu",
   "license": "ISC",
