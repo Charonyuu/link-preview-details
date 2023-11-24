@@ -17,9 +17,16 @@ npm install link-preview-details
 ```javascript
 const getLinkPreview = require('link-preview-details');
 
-getLinkPreview('https://example.com').then(preview =>{
+// 以默认模式运行
+getLinkPreview('https://example.com').then(preview => {
     console.log(preview);
 });
+
+// 以无沙箱模式运行
+getLinkPreview('https://example.com', true).then(preview => {
+    console.log(preview);
+});
+
 ```
 
 ## API
@@ -27,12 +34,5 @@ getLinkPreview('https://example.com').then(preview =>{
 `getLinkPreview(url)`
 
 - `url` (string): 您想要生成預覽的網頁 URL。
+- useNoSandbox (boolean): 可選，設置為 true 以在無沙箱模式下運行。
 - 返回: Promise，解析為一個包含標題、描述和圖片 URL 的對象。
-
-## 作者
-
-charonyu
-
-## 許可證
-
-ISC

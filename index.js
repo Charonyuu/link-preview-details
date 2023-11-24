@@ -1,7 +1,15 @@
 const puppeteer = require("puppeteer");
 
-async function getWebsiteDetails(url) {
-  const browser = await puppeteer.launch({ headless: "new" });
+async function getWebsiteDetails(url, useNoSandbox = false) {
+  const launchOptions = {
+    headless: "new",
+  };
+  // 如果指定了 useNoSandbox，添加无沙箱模式参数
+  if (useNoSandbox) {
+    launchOptions.args = ["--no-sandbox", "--disable-setuid-sandbox"];
+  }
+  const browser = await puppeteer.launch(launchOptions);
+
   const page = await browser.newPage();
   await page.setUserAgent(
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36"
@@ -83,6 +91,7 @@ async function getWebsiteDetails(url) {
   });
 
   await browser.close();
+
   return result;
 }
 
